@@ -14,19 +14,6 @@
       "SwaggerKey": "usersservice"
     },
     {
-      "UpstreamPathTemplate": "/OtherService/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Update", "PUT", "PATCH", "Delete" ],
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "otherservice.api",
-          "Port": 80
-        }
-      ],
-      "DownstreamPathTemplate": "/{everything}",
-      "SwaggerKey": "otherservice"
-    },
-    {
       "UpstreamPathTemplate": "/AuthService/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Update", "PUT", "PATCH", "Delete" ],
       "DownstreamScheme": "http",
