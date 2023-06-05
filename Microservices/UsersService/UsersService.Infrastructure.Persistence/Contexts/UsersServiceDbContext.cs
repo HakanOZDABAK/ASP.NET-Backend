@@ -12,21 +12,8 @@ public class UsersServiceDbContext : DbContext
         ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
     }
 
-    public DbSet<User> Users { get; set; }
-    public DbSet<Customer> Customers { get; set; }
     public DbSet<Claim> Claims { get; set; }
-    public DbSet<JobComment> JobComments { get; set; }
-    public DbSet<JobFile> JobFiles { get; set; }
-    public DbSet<JobFollower> JobFollowers { get; set; }
-    public DbSet<JobPriority> JobPriorities { get; set; }
-    public DbSet<JobQA> JobQAs { get; set; }
-    public DbSet<Job> Jobs { get; set; }
-    public DbSet<JobStatus> JobStatuses { get; set; }
-    public DbSet<JobTask> JobTasks { get; set; }
-    public DbSet<JobType> JobTypes { get; set; }
-    public DbSet<Project> Projects { get; set; }
-    public DbSet<ProjectUser> ProjectUsers { get; set; }
-    public DbSet<Sprint> Sprints { get; set; }
+
 
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

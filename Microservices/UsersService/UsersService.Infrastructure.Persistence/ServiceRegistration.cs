@@ -27,21 +27,7 @@ public static class ServiceRegistration
         }
 
         services.AddScoped(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
-        services.AddScoped<IUserRepositoryAsync, UserRepositoryAsync>();
-        services.AddScoped<ICustomerRepositoryAsync, CustomerRepositoryAsync>();
         services.AddScoped<IClaimRepositoryAsync, ClaimRepositoryAsync>();
-        services.AddScoped<IJobCommentRepositoryAsync, JobCommentRepositoryAsync>();
-        services.AddScoped<IJobFileRepositoryAsync, JobFileRepositoryAsync>();
-        services.AddScoped<IJobFollowerRepositoryAsync, JobFollowerRepositoryAsync>();
-        services.AddScoped<IJobPriorityRepositoryAsync, JobPriorityRepositoryAsync>();
-        services.AddScoped<IJobQARepositoryAsync, JobQARepositoryAsync>();
-        services.AddScoped<IJobRepositoryAsync, JobRepositoryAsync>();
-        services.AddScoped<IJobStatusRepositoryAsync, JobStatusRepositoryAsync>();
-        services.AddScoped<IJobTaskRepositoryAsync, JobTaskRepositoryAsync>();
-        services.AddScoped<IJobTypeRepositoryAsync, JobTypeRepositoryAsync>();
-        services.AddScoped<IProjectRepositoryAsync, ProjectRepositoryAsync>();
-        services.AddScoped<IProjectUserRepositoryAsync, ProjectUserRepositoryAsync>();
-        services.AddScoped<ISprintRepositoryAsync, SprintRepositoryAsync>();
 
     }
 }
